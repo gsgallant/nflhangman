@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+
+
+	body {
+	    
+	    
+	    height: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	}
+
+
+	header {
+		padding: 30px;
+		width: 400px;
+		color: #ffffff;
+		font-size: 50px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		background-color: red;
+		position: relative;
+		top:0px;
+		left: 458px;
+		text-align: center;
+	}
+
+	#subText{
+		padding: 30px;
+		width: 600px;
+		color: blue;
+		font-size: 15px;
+		text-align: center;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		background-color: white;
+		position: relative;
+		top:-12px;
+		left: 361px;
+
+
+	}
+	/*team logo*/
+	#logo {
+		
+		position: relative;
+		top:-10px;
+		left:608px;
+	}
+
+	#jQuery-area{
+
+		position: fixed;
+		top:380px;
+		left:700px;
+		z-index: 90;
+		
+		
+
+		
+	}
+
+	/*this is the area for the correct guesses display*/
+	#keepTrack {
+		
+		padding: 30px;
+		width: 600px;
+		color: #ffffff;
+		font-size: 20px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		background-color: blue;
+		position: relative;
+		top:-24px;
+		left: 361px;
+		text-align: center;
+
+	}
+
+	/*this is the reminders area for progress of #guesses, max guesses, letters used, wins, losses.*/
+	#letters {
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		padding: 30px;
+		width: 600px;
+		color: #ffffff;
+		font-size: 30px;
+		background-color: red;
+		position: relative;
+		top:-24px;
+		left: 361px;
+		text-align: left;
+
+	}
+
+	/*this area displays "you win" or "you lose" or "new game"*/
+	#winOrLose{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+		font-size: 20px;
+		padding: 30px;
+		width: 300px;
+		color: white;
+		font-size: 25px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		background-color: blue;
+		position: relative;
+		top:-17px;
+		left: 516px;
+		text-align: center;
+
+	}
