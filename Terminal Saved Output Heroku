@@ -1,0 +1,148 @@
+Last login: Thu Feb 18 15:29:55 on ttys000
+Greg@nbp-195-224:~$ cd desktop/week-3-game
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ rm -rf .git
+Greg@nbp-195-224:~/desktop/week-3-game$ ls -lah
+total 48
+drwxrwxrwx  7 Greg  staff   238B Feb 18 15:53 .
+drwx------+ 8 Greg  staff   272B Feb 18 14:38 ..
+-rwxrwxrwx@ 1 Greg  staff   8.0K Feb 18 14:39 .DS_Store
+-rwxrwxrwx  1 Greg  staff   844B Feb 18 14:36 Hangman.html
+drwxrwxrwx  7 Greg  staff   238B Feb 17 18:20 assets
+-rwxrwxrwx  1 Greg  staff     2B Feb  2 19:34 composer.json
+-rwxrwxrwx  1 Greg  staff    38B Feb 16 17:46 index.php
+Greg@nbp-195-224:~/desktop/week-3-game$ cd ..
+Greg@nbp-195-224:~/desktop$ git clone https://github.com/gsgallant/week-3-game.git
+fatal: destination path 'week-3-game' already exists and is not an empty directory.
+Greg@nbp-195-224:~/desktop$ git clone https://github.com/gsgallant/week-3-game.git
+Cloning into 'week-3-game'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Greg@nbp-195-224:~/desktop$ cd week-3-game
+Greg@nbp-195-224:~/desktop/week-3-game$ git add -A
+Greg@nbp-195-224:~/desktop/week-3-game$ git commit -m "Week 3 HW - Hangman - completed"
+[master (root-commit) 211ce08] Week 3 HW - Hangman - completed
+ Committer: gsgallant <Greg@nbp-195-224.nbp.ruw.rutgers.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 49 files changed, 360 insertions(+)
+ create mode 100755 Hangman.html
+ create mode 100644 assets/audio/nfltheme.mp3
+ create mode 100755 assets/audio/wronganswer.mp3
+ create mode 100755 assets/css/reset.css
+ create mode 100755 assets/css/style.css
+ create mode 100755 assets/images/football.goal.post.01.jpg
+ create mode 100755 assets/images/goal-post.png
+ create mode 100755 assets/images/goalposts.png
+ create mode 100755 assets/images/k0830963.jpg
+ create mode 100755 assets/images/nflcollage.jpg
+ create mode 100755 assets/images/nfllogos.jpg
+ create mode 100755 assets/images/nflthumb.jpg
+ create mode 100755 assets/images/refs.jpg
+ create mode 100755 assets/images/teams/49ers.gif
+ create mode 100755 assets/images/teams/bears.gif
+ create mode 100755 assets/images/teams/bengals.gif
+ create mode 100755 assets/images/teams/bills.gif
+ create mode 100755 assets/images/teams/broncos.gif
+ create mode 100755 assets/images/teams/browns.gif
+ create mode 100755 assets/images/teams/buccaneers.gif
+ create mode 100755 assets/images/teams/cardinals.gif
+ create mode 100755 assets/images/teams/chargers.gif
+ create mode 100755 assets/images/teams/chiefs.gif
+ create mode 100755 assets/images/teams/colts.gif
+ create mode 100755 assets/images/teams/cowboys.gif
+ create mode 100755 assets/images/teams/dolphins.gif
+ create mode 100755 assets/images/teams/eagles.gif
+ create mode 100755 assets/images/teams/falcons.gif
+ create mode 100755 assets/images/teams/giants.gif
+ create mode 100755 assets/images/teams/jaguars.gif
+ create mode 100755 assets/images/teams/jets.gif
+ create mode 100755 assets/images/teams/lions.gif
+ create mode 100755 assets/images/teams/nflthumb.jpg
+ create mode 100755 assets/images/teams/packers.gif
+ create mode 100755 assets/images/teams/panthers.gif
+ create mode 100755 assets/images/teams/patriots.gif
+ create mode 100755 assets/images/teams/raiders.gif
+ create mode 100755 assets/images/teams/rams.gif
+ create mode 100755 assets/images/teams/ravens.gif
+ create mode 100755 assets/images/teams/redskins.gif
+ create mode 100755 assets/images/teams/saints.gif
+ create mode 100755 assets/images/teams/seahawks.gif
+ create mode 100755 assets/images/teams/steelers.gif
+ create mode 100755 assets/images/teams/texans.gif
+ create mode 100755 assets/images/teams/titans.gif
+ create mode 100755 assets/images/teams/vikings.gif
+ create mode 100755 assets/javascript/game.js
+ create mode 100755 composer.json
+ create mode 100755 index.php
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ git push
+Counting objects: 56, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (56/56), 1.10 MiB | 0 bytes/s, done.
+Total 56 (delta 0), reused 0 (delta 0)
+To https://github.com/gsgallant/week-3-game.git
+ * [new branch]      master -> master
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ heroku login
+Updating Heroku v4 CLI to 4.27.21-839acbb (master)... done
+Updating plugins... done. Updated 4 packages.
+heroku-cli: Installing core plugins... done
+Enter your Heroku credentials.
+Email: greg.gallant@yahoo.com
+Password (typing will be hidden): 
+Logged in as greg.gallant@yahoo.com
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ git remote -v
+origin	https://github.com/gsgallant/week-3-game.git (fetch)
+origin	https://github.com/gsgallant/week-3-game.git (push)
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ heroku create
+Creating app... done, stack is cedar-14
+https://cryptic-harbor-14169.herokuapp.com/ | https://git.heroku.com/cryptic-harbor-14169.git
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ git remote -v
+heroku	https://git.heroku.com/cryptic-harbor-14169.git (fetch)
+heroku	https://git.heroku.com/cryptic-harbor-14169.git (push)
+origin	https://github.com/gsgallant/week-3-game.git (fetch)
+origin	https://github.com/gsgallant/week-3-game.git (push)
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ git push heroku master
+Counting objects: 56, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (56/56), 1.10 MiB | 1.19 MiB/s, done.
+Total 56 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing system packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - php (5.6.18)
+remote:        - Apache (2.4.16)
+remote:        - Nginx (1.8.0)
+remote: -----> Enabling PHP extensions...
+remote:        - ext-zend-opcache (automatic)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.0.0-alpha11 2015-11-14 16:21:07
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 75.2M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://cryptic-harbor-14169.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy.... done.
+To https://git.heroku.com/cryptic-harbor-14169.git
+ * [new branch]      master -> master
+Greg@nbp-195-224:~/desktop/week-3-game (master)$ 
