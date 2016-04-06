@@ -3,8 +3,7 @@
 
 window.onload=function(){
 //setting up some local variables
-// var football = ["texans","steelers","giants", "jets", "broncos", "panthers", "buccaneers", "bills", "dolphins", "patriots", "bengals", "browns", "ravens", "falcons","vikings", "packers", "lions","bears", "colts", "jaguars", "titans","cardinals","chiefs","raiders","chargers","saints","cowboys","eagles","redskins","rams","49ers","seahawks"];
-var football = ["jets"];
+var football = ["texans","steelers","giants", "jets", "broncos", "panthers", "buccaneers", "bills", "dolphins", "patriots", "bengals", "browns", "ravens", "falcons","vikings", "packers", "lions","bears", "colts", "jaguars", "titans","cardinals","chiefs","raiders","chargers","saints","cowboys","eagles","redskins","rams","49ers","seahawks"];
 var totalWins = 0;//keeps track of all wins
 var totalLosses = 0;//tracks all losses
 var endOfGame = false;//flag for endOfGame to disallow extra key presses during 2 second delay for display of logo, reset values, etc.
@@ -23,6 +22,7 @@ var winaudio = new Audio('assets/audio/nfltheme.mp3');//winner audio
 var loseaudio = new Audio('assets/audio/wronganswer.mp3');//loser audio
 var teamImages = "assets/images/teams/";//path to teams logo images
 var refPic = $('<img src=assets/images/refbw.gif>');
+
 $("#refPicLeft").append(refPic);
 $("#refPicRight").append(refPic)
 
