@@ -26,6 +26,7 @@
 	#bkgrd{
 		background-size: 100% 160%;
     	background-repeat: no-repeat;
+    	background-position: center top;
 	}
 
 	#refPicLeft{
