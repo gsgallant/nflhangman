@@ -18,7 +18,7 @@ HTML, JavaScript, JQuery
 
 
 #Comments
-My very first game and I thoroughly enjoyed doing this project!  It was a great opportunity to see what I could do with the style and the sound effects and the logic of filling in blanks as the user chose letters.  This was a nice way to get my logic muscles exercising again back in the software industry.
+My very first JavaScript/jQuery app.  I thoroughly enjoyed doing this project!  It was a great opportunity to see what I could do with the style and the sound effects and the logic of filling in blanks as the user chose letters.  This was a nice way to get my logic muscles exercising again back in the software industry.
 
 <p align="center">
 &copy; Greg Gallant
